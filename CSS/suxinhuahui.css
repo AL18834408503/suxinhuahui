@@ -1,0 +1,656 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: white;
+}
+ul li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+/*头部开始*/
+.head {
+	width: 100%;
+	height: 759px;
+	background-color: red;
+	margin-bottom: 60px;
+	position: relative;
+}
+.head .con{
+	width: 100%;
+	height: 759px;
+	position: relative;
+	background-color: green;
+}
+.head .pic{
+	width: 100%;
+	height: 759px;
+	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.head .pic img{
+	width: 100%;
+	height: 759px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all .5s;
+}
+.top {
+	width: 100%;
+	height: 79px;
+	background-color: rgba(0,0,0,0.15);
+	display: inline-block;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+}
+.top-left {	
+	width: 150px;
+	height: 50px;
+	background-size: 150px 50px;
+    margin-top: 14px;
+    margin-left: 104px;
+    float: left;
+    display: inline-block;
+}
+.top-right {
+	width: 631px;
+	height: 79px;
+	display: inline-block;
+	margin-right: 84px;
+	float: right;
+}
+.top-right-first {
+	width: 86px;
+	height: 79px;
+	text-align: center;
+	line-height: 79px;
+	font-size: 15px;
+	color: #16B0DC;
+}
+.top-right-second {
+	width: 86px;
+	height: 79px;
+	text-align: center;
+	line-height: 79px;
+	font-size: 15px;
+	color: #fff;
+}
+.top-right ul li {
+	display: inline-block;
+}
+.top-right-first:hover,.top-right-second:hover {
+	color: #16B0DC;
+}
+.Top {
+	width: 100%;
+	height: 79px;
+	display: inline-block;
+	position: fixed;
+	left: 0px;
+	top: -90px;
+	background-color: #fff;
+	z-index: 999;
+}
+.top-left {	
+	width: 150px;
+	height: 50px;
+	background-size: 150px 50px;
+    margin-top: 14px;
+    margin-left: 104px;
+    float: left;
+    display: inline-block;
+}
+.top-right {
+	width: 631px;
+	height: 79px;
+	display: inline-block;
+	margin-right: 84px;
+	float: right;
+}
+.top-right-first {
+	width: 86px;
+	height: 79px;
+	text-align: center;
+	line-height: 79px;
+	font-size: 15px;
+	color: #16B0DC;
+}
+.top-right-second {
+	width: 86px;
+	height: 79px;
+	text-align: center;
+	line-height: 79px;
+	font-size: 15px;
+	color: #2A333C;
+}
+.top-right ul li {
+	display: inline-block;
+}
+.top-right-first:hover,.top-right-second:hover {
+	color: #16B0DC;
+}
+.bottom {
+	width: 809px;
+	height: 104px;
+	z-index: 3;
+	
+	position: relative;
+}
+.bottom span {
+	width: 500px;
+	font-size: 50px;
+	color: white;
+	/*float: left;*/
+	position: absolute;
+	top:640px;
+	left: 450px;
+	z-index: 3;
+	opacity: 0;
+}
+.circle {
+	width: 30px;
+	height: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	margin-top: 614px;
+	z-index: 3;
+	/*background-color: red;*/
+	display: flex;
+	justify-content: space-between;
+}
+.circle .first {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #D4D0DD;
+	border-radius: 50%;
+	transition: all .5s;
+}
+.head .left {
+	width: 15%;
+	height: 100%;
+	background-image: linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.05));
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.head .left i{
+	font-size: 40px;
+	margin-left: 70px;
+	line-height: 680px;
+	color: #fff;
+}
+.head .right i{
+	font-size: 40px;
+	margin-right: 70px;
+	float: right;
+	line-height: 680px;
+	color: #fff;
+}
+.head .right {
+	width: 15%;
+	height: 100%;
+	background-image: linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.05));
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+/*头部结束*/
+/*素馨花艺开始*/
+.container {
+	width: 1170px;
+	height: 688px;
+	margin: auto;
+	text-align: center;
+	line-height: 43px;
+}
+.container-top {
+	width: 1140px;
+	height: 43px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.container-top span.zi {
+	font-size: 40px; 
+	color: #37474F;
+}
+.container-top span.more {
+	width: 66px;
+	height: 30px;
+	margin-left: 10px;
+}
+.container-center {
+	width: 912px;
+	height: 44px;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #73838B;
+	margin-bottom: 50px;
+}
+.btn{
+	width: 1150px;
+	height: 540px;
+	/*background-color: yellow;*/
+	position: relative;
+}
+.btn .btnleft{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #C8CFD4;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.btn .btnright{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #C8CFD4;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.container-bottom {
+	width: 1070px;
+	height: 540px;
+	margin: 0 auto;
+	display: inline-block;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+.containerinfo{
+	width: 3200px;
+	height: 540px;
+	/*background-color: pink;*/
+	transition: all 0.5s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container-bottom-left {
+	width: 325px;
+	height: 540px;
+	display: inline-block;
+}
+.container-bottom-left img {
+	width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    float: left;
+}
+.container-bottom-left h4 {
+	font-size: 18px;
+	color: #37474F;
+	font-weight: 500;
+}
+.container-bottom-left p {
+	font-size: 14px;
+	color: #757575;
+	text-align: left;
+	line-height: 20px;
+}
+.container-bottom-left .seek {
+	width: 320px;
+	height: 36px;
+	background-color: #F96868;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.container-bottom-left .seek p {
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	line-height: 36px;
+}
+.container-bottom-right {
+	width: 320px;
+	height: 540px;
+	float: right;
+	/*background-color: blue;*/
+	display: inline-block;
+}
+.container-bottom-right img {
+	width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    float: left;
+}
+.container-bottom-right h4 {
+	font-size: 18px;
+	color: #45535B;
+	font-weight: 500;
+}
+.container-bottom-right p {
+	font-size: 14px;
+	color: #757575;
+    line-height: 20px;
+}
+.container-bottom-right .seek {
+	width: 320px;
+	height: 36px;
+	background-color: #F96868;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.container-bottom-right .seek p {
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	line-height: 36px;
+}
+/*素馨花艺结束*/
+/*素馨花语开始*/
+.flowerLanguage {
+	width: 100%;
+	height: 740px;
+	background-color: #F5F5F5;
+	text-align: center;
+	display: inline-block;
+}
+.flowerLanguage-top {
+	width: 1140px;
+	height: 43px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 78px;
+}
+.flowerLanguage-top span.zi {
+	font-size: 40px; 
+	color: #37474F;
+	line-height: 43px;
+	margin-top: 78px;
+}
+.flowerLanguage-top span.more {
+	width: 66px;
+	height: 30px;
+	margin-left: 10px;
+}
+.flowerLanguage-center {
+	width: 1170px;
+	height: 504px;
+	/*background-color: blue;*/
+	margin: 0 auto;
+	margin-top: 56px;
+}
+.flowerLanguage-center-first {
+	width: 585px;
+	height: 96px;
+	/*background-color: yellow;*/
+	display: inline-block;
+	margin-bottom: 30px;
+	/*background-color: red;*/
+	float: left;
+	transition: all .5s;
+}
+.flowerLanguage-center-first img {
+	width: 160px;
+	height: 96px;
+	border-radius: 3px;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.flowerLanguage-center-first .up {
+	font-size: 22px;
+	color: #2A333C;
+	float: left;
+}
+.flowerLanguage-center-first .center {
+	width: 375px;
+	height: 42px;
+	font-size: 14px;
+	text-align: left;
+	color: #7F8B96;
+	float: left;
+}
+.flowerLanguage-center-first .bottom {
+	width: 150px;
+	height: 22px;
+	font-size: 14px;
+	text-align: left;
+	color: #7F8B96;
+	float: left;
+}
+.flowerLanguage-center-first .eye img {
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 6px;
+}
+.flowerLanguage-center-first .eye p{
+	width: 50px;
+	height: 22px;
+	font-size: 14px;
+	text-align: left;
+	color: #7F8B96;
+	float: left;
+	line-height: 22px;
+}
+.flowerLanguage-center-second {
+	width: 585px;
+	height: 96px;
+	/*background-color: yellow;*/
+	float: right;
+	margin-bottom: 30px;
+	transition: all .5s;
+}
+.flowerLanguage-center-second img {
+	width: 160px;
+	height: 96px;
+	border-radius: 3px;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.flowerLanguage-center-second .up {
+	font-size: 22px;
+	color: #2A333C;
+	float: left;
+}
+.flowerLanguage-center-second .center {
+	width: 375px;
+	height: 42px;
+	font-size: 14px;
+	text-align: left;
+	color: #7F8B96;
+	float: left;
+}
+.flowerLanguage-center-second .bottom {
+	width: 150px;
+	height: 22px;
+	font-size: 14px;
+	text-align: left;
+	color: #7F8B96;
+	float: left;
+}
+.flowerLanguage-center-second .eye img {
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 6px;
+}
+.flowerLanguage-center-second .eye p{
+	width: 50px;
+	height: 22px;
+	font-size: 14px;
+	text-align: left;
+	color: #7F8B96;
+	float: left;
+	line-height: 22px;
+}
+/*素馨花语结束*/
+/*素馨花卉工作室开始*/
+.studio {
+	width: 1170px;
+	height: 870px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.studio-top {
+	width: 1140px;
+	height: 43px;
+	/*background-color: red;*/
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 43px;
+}
+.studio-top span.zi {
+	font-size: 40px; 
+	color: #37474F;
+}
+.studio .center {
+	width: 1140px;
+	height: 770px;
+	/*background-color: yellow;*/
+	margin: 0 auto;
+	margin-top: 94px;
+}
+.studio .center .first {
+	width: 1080px;
+	height: 32px;
+	color: #454545;
+	font-size: 16px;
+	text-align: center;
+	line-height: 32px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+.studio .center .second {
+	width: 1080px;
+	height: 32px;
+	color: #454545;
+	font-size: 16px;
+	text-align: center;
+	line-height: 32px;
+	margin: 0 auto;
+	margin-bottom: 6px;
+}
+.studio .center .img {
+	width: 530px;
+	height: 340px;
+	margin: 0 auto;
+	margin-top: 34px;
+}
+/*素馨花卉工作室结束*/
+/*底部开始*/
+.navi {
+	width: 100%;
+	height: 20px;
+	background-color: white;
+	margin-top: 30px;
+}
+.b-bottom {
+	width: 100%;
+	height: 182px;
+	background-color: #F5F5F5;
+}
+.b-bottom .b-bottom-top {
+	width: 120px;
+	height: 56px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+}
+.b-bottom-top i{
+	font-size: 28px;
+	cursor: pointer;
+}
+.b-bottom-top .zhe{
+	width: 24px;
+	height: 24px;
+}
+.b-bottom-top .zhe:hover img{
+	display: block;
+}
+.b-bottom-top  img{
+	width: 160px;
+	height: 208px;
+	position: absolute;
+	bottom: 50px;
+	left: -30;
+	display: none;
+}
+.b-bottom-top .zhe i{
+	color: #04AE0F;
+}
+.b-bottom-top .qq i{
+	color: #1296DB;
+}
+.b-bottom-top .qq i:hover{
+	color: #89BCEB;
+}
+.b-bottom .b-bottom-center {
+	width: 1140px;
+	height: 25px;
+	margin: 0 auto;
+	text-align: center;
+    margin-top: 4px;
+}
+.b-bottom .b-bottom-center p:hover {
+	text-decoration: underline;
+}
+.b-bottom .b-bottom-center p {
+	display: inline-block;
+    font-size: 10px;
+    color: #62A8EA;
+    margin-right: 15px;
+}
+.b-bottom .b-bottom-center .center {
+	font-size: 10px;
+    color: #AAAAAA;
+}
+/*底部结束*/
+/*回到顶部开始*/
+.backTop{
+	width: 36px;
+	height: 36px;
+	background-color: #62a8ea;
+	position: fixed;
+    right: 10px;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.backTop i{
+	color: #fff;
+	font-size: 14px;
+}

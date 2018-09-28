@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+	<title>留言建议</title>
+	<link rel="stylesheet" type="text/css" href="CSS/message.css">
+	<script src="js/message.js"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_838521_8i3rg32f9b2.css" />
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_838521_tftqhjw24f8.css" />
+	<script src="js/animate.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+		<div class="header-top">
+			<ul>
+				<a href="suxinhuahui.html"><li class="top-right-second">网站首页</li></a>
+				<a href="huayanhuayu.html"><li class="top-right-second">花言花语</li></a>
+				<a href="#"><li class="top-right-second">素馨动态</li></a>
+				<a href="#"><li class="top-right-second">淘宝商城</li></a>
+				<a href="huaArt.html"><li class="top-right-second">素馨花艺</li></a>
+				<a href="#"><li class="top-right-first">留言建议</li></a>
+				<a href="AboutSX.html"><li class="top-right-second">关于素馨</li></a>
+			</ul>
+		</div>
+		<div class="header-bottom">
+			<p>留言建议</p>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 内容开始 -->
+	<div class="body">
+		<div class="body-left">
+			<ul>				
+				<li>
+					<div class="body-left-first">
+						<div class="img">
+							<img src="./images/tou.png">
+						</div>
+						<p class="up">张三</p>
+						<p class="right">2018-01-04 14:22：33</p>
+						<p class="down">更新有些慢</p>
+					</div>
+				</li>
+				<li>
+					<div class="body-left-second">
+						<div class="img">
+							<img src="./images/tou.png">
+						</div>
+						<p class="up">张三</p>
+						<p class="right">2018-01-04 14:22：33</p>
+						<p class="down">更新有些慢</p>
+					</div>
+				</li>
+				<li>
+					<div class="body-left-second">
+						<div class="img">
+							<img src="./images/tou.png">
+						</div>
+						<p class="up">张三</p>
+						<p class="right">2018-01-04 14:22：33</p>
+						<p class="down">更新有些慢</p>
+					</div>
+				</li>
+				<li>
+					<div class="body-left-second">
+						<div class="img">
+							<img src="./images/tou.png">
+						</div>
+						<p class="up">张三</p>
+						<p class="right">2018-01-04 14:22：33</p>
+						<p class="down">更新有些慢</p>
+					</div>
+				</li>
+				<li>
+					<div class="body-left-second">
+						<div class="img">
+							<img src="./images/tou.png">
+						</div>
+						<p class="up">张三</p>
+						<p class="right">2018-01-04 14:22：33</p>
+						<p class="down">更新有些慢</p>
+					</div>
+				</li>
+				<li>
+					<div class="body-left-second">
+						<div class="img">
+							<img src="./images/tou.png">
+						</div>
+						<p class="up">张三</p>
+						<p class="right">2018-01-04 14:22：33</p>
+						<p class="down">更新有些慢</p>
+					</div>
+				</li>
+			</ul>
+			<div class="bottom">
+				<img src="./images/xia.png">
+				<p>加载更多</p>
+			</div>
+		</div>
+		<div class="body-right">
+			<input type="text" name="text" placeholder="姓名" class="input">
+			<input type="text" name="text" placeholder="联系电话" class="in">
+			<textarea cols="30" rows="10" maxlength="100" placeholder="您的建议:"></textarea>
+			<div class="text">最多可输入100个字，现已输入<span id="num">0</span>个字</div>
+			<input type="text" name="te" placeholder="验证码" class="te">
+			<p>
+				<img src="./images/yan.png">
+			</p>
+			<button>提交</button>
+		</div>
+	</div>
+	<!-- 内容结束 -->
+	<!-- 底部开始 -->
+	<div class="navi">	
+	</div>
+	<div class="b-bottom">
+		<div class="b-bottom-top">
+			<a href="#"><img src="./images/weichat.png"></a>
+			<a href="#"><img src="./images/qq.png"></a>
+			<a href="#"><img src="./images/lan.png"></a>
+		</div>
+		<div class="b-bottom-center">
+			<a href=""><p>豫ICP备17021305号</p></a>
+			<img src="./images/hui.png">
+			<a href=""><p>豫公网安备41012202000160</p></a>
+		</div>
+		<div class="b-bottom-center">
+			<span class="center">联系电话 0371-62180519  15890062947</span>
+		</div>
+		<div class="b-bottom-center">
+			<span class="center">郑州素馨花卉有限公司 版权所有 &copy 2017-2021</span>
+		</div>
+	</div>
+	<!-- 底部结束 -->
+	<!--回到顶部开始-->
+	<div class="backTop">
+		<i class="iconfont icon-shouqi"></i>
+	</div>
+</body>
+</html>
+<script type="text/javascript">	
+	let res = document.body.scrollTop||document.documentElement.scrollTop;
+	let backTop = document.querySelector('.backTop');
+	backTop.onclick = function() {
+		animate(document.body,{scrollTop:0});
+		animate(document.documentElement,{scrollTop:0});
+	}
+	window.onscroll = function(){
+		//实时获取页面滚动条的距离
+		let bodytop = document.body.scrollTop||document.documentElement.scrollTop;
+	
+		if(bodytop >= 300){
+			backTop.style.bottom = '20px';
+		}
+		if(bodytop < 50){
+			backTop.style.bottom = '-80px';
+		}
+	}
+</script>
